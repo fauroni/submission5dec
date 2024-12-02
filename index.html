@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <title>Health Tracker</title>
+</head>
+
+<body>
+    <h1>Health Tracker</h1>
+    <form id="createForm">
+        <label for="type">Type (Exercise, Meal, Mood):</label>
+        <select id="type" required>
+            <option value="exercise">Exercise</option>
+            <option value="meal">Meal</option>
+            <option value="mood">Mood</option>
+        </select>
+        <label for="description">Description:</label>
+        <input type="text" id="description" required>
+        <label for="calories">Calories (for Meals):</label>
+        <input type="number" id="calories" placeholder="Only for Meals">
+        <button type="submit">Create</button>
+    </form>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton">Search</button>
+    <div id="itemsContainer"></div>
+    <script src="/src/script.js"></script>
+</body>
+
+</html>
